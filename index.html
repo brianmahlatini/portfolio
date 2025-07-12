@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brian Mahlatini | Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Add this inside the <head> tag for progress bar styles -->
+<style>
+  .skills-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill-group {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    flex: 1 1 300px;
+    max-width: 350px;
+  }
+
+  .skill-group h3 {
+    color: #1a73e8;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .skill {
+    margin-bottom: 1rem;
+  }
+
+  .skill-name {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1a73e8, #34a853);
+  }
+  
+  /* Profile picture style */
+  .about-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-text {
+    flex: 1 1 350px;
+    max-width: 600px;
+  }
+
+  .profile-pic {
+    flex: 0 0 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 200px;
+  }
+
+  .profile-pic img {
+    width: 100%;
+    display: block;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Brian Mahlatini</div>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Brian</h1>
+      <p>A Full-Stack Developer | AI Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="profile-pic">
+        <img src="myself.jpeg" alt="Brian Mahlatini" />
+      </div>
+      <div class="about-text">
+        <p>I am a full-stack developer specializing in React, Node.js, Django, and AI tools like OpenAI, LangChain, and Hugging Face. I build scalable and intelligent web solutions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="skills">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <div class="skill">
+          <div class="skill-name">HTML5 & CSS3</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">JavaScript (ES6+)</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">React js</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <div class="skill">
+          <div class="skill-name">Node.js & Express</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 70%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Python & Django</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Databases (SQL/NoSQL)</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 75%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Tools & Others</h3>
+        <div class="skill">
+          <div class="skill-name">Git & GitHub</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Docker & AWS</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 65%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill-name">Responsive Design</div>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="project-card">
+          <h3>AI Support Bot</h3>
+          <p>Automated customer support using OpenAI + LangChain. Built with Node.js and n8n.</p>
+        </div>
+        <div class="project-card">
+          <h3>MERN To-Do App</h3>
+          <p>Full-stack task management app with user auth and MongoDB storage.</p>
+        </div>
+        <div class="project-card">
+          <h3>AI Portfolio Chatbot</h3>
+          <p>Personalized chatbot trained on my portfolio using OpenAI API and React.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required/>
+        <input type="email" placeholder="Your Email" required/>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Brian Mahlatini. All rights reserved.</p>
+  </footer>
+</body>
+</html>
